@@ -1,0 +1,9 @@
+img {
+    width: 300px;
+}
+
+table, th, td {
+    border: 5px double #29BDFF;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
