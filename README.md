@@ -1,0 +1,138 @@
+# Stone Tu's Study Space
+
+<p>Following are my works during AIEN11 class. Update 3/12/2021</p>
+    <a href="https://mango-flower-0625c1400.azurestaticapps.net/">Static web in Azure</a>
+    <table>
+        <tr>
+            <th>畫面</th>
+            <th>說明</th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <a href="https://papsciroc-server.herokuapp.com/" target="_blank"
+                    onClick="window.open('https://papsciroc-server.herokuapp.com/','papsciroc','resizable,height=660,width=1020'); return false;">
+                    <img src="./img/screen_shot_pap.png" alt=""></a>
+                <video controls="controls" width="300"
+                    name="Video Name" src="./video/papsciroc.mov"></video>
+            </td>
+            <td>
+                <p>
+                剪刀石頭布的網站，可供多人連線到網頁尋找對手進行比賽，需要註冊帳號進行登入，並且會將比賽紀錄到資料庫，可供查詢與分析．
+                網頁部署到Heroku，並且使用heroku的資料庫clearDB MySQL．</p>
+                <p>應用技術：HTML, CSS, JavaScript, JQuery，Node.Js, MySql</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期3/19</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <a href="https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html','tableTennis','resizable,height=660,width=1020'); return false;">
+                    <img src="./img/tableTennis_screen.png" alt="tableTennis_screen.png"></a>
+                <video controls="controls" width="300"
+                    name="Video Name" src="./video/tableTennis.mov"></video>
+            </td>
+            <td>
+                <p>
+                簡單的打桌球遊戲，滑鼠移動到人物上可以移動人物，按住滑鼠左鍵移動可揮拍，放開滑鼠左鍵完成擊球．</p>
+                <p>應用技術：HTML, CSS, JavaScript, JQuery</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期3/12</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <a href="https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html','tableTennis','resizable,height=660,width=1000'); return false;">
+                    <img src="./img/greenman_screen.png" alt="greenman_screen.png"></a>
+                <video controls="controls" width="300"
+                    name="Video Name" src="./video/greenman.mov"></video>
+            </td>
+            <td>
+                <p>小綠人的遊戲，使用網頁上的互動元素來過關，主要是練習Canvas的功能，使用HTML, CSS, JavaScript, JQuery</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期2/11</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img src="./img/reserve-bot1.png" alt="reserve-bot1.png">
+                <img src="./img/reserve-bot2.png" alt="reserve-bot2.png">
+            </td>
+            <td>
+                <iframe allow="microphone;" width="350" height="330"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/5f8fd3f7-3433-417b-b7e8-6a32216f8a65">
+                </iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>餐廳預約對話機械人，有兩個Intent，可預約訂位與查詢特定時間的餐廳空位人數，使用Dialogflow, Node.js接收與處理, 透過sheetDB將資料存取到google sheet, Node.js程式放置於雲端heroku server． </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期2/21</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img src="./img/reserve_mysql_screen.png" alt="reserve_mysql_screen.png">
+            </td>
+            <td>
+                <iframe allow="microphone;" width="350" height="330"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/eff4ca35-caa2-498f-a625-933ba2789a4b">
+                </iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>餐廳預約對話機械人MySql版本，更改為將資料存入MySql database，增加可以自動移動舊資料到歷史資料表，以及可以自動產生未來天數的空白資料可供預約與查詢．</p>
+                <p>備註：MySql server建置於ubuntu系統個人電腦，需要啟動電腦才能使用服務</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期2/26</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <a href="https://stonetu.github.io/snake/mySnake.html" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/snake/mySnake.html','snake','resizable,height=660,width=530'); return false;">
+                    <img src="./img/snake_screen.png" alt="snake_screen.png"></a>
+            </td>
+            <td>
+                <p>貪食蛇，使用鍵盤操作綠色貪食蛇吃掉橘紅色食物，使用HTML, CSS, JavaScript, JQuery</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期2/11</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <a href="https://stonetu.github.io/calculator/" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/calculator/','calculator','resizable,height=700,width=500'); return false;">
+                    <img src="./img/calculator_screen.png" alt="calculator_screen.png"></a>
+            </td>
+            <td>
+                <p>老師所建議的簡易計算機程式，使用HTML, CSS, JavaScript</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>完成日期2/1</p>
+            </td>
+        </tr>
+    </table>
