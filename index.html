@@ -10,7 +10,25 @@
 </head>
 
 <body>
-    <p>Following are my works during AIEN11 class. Update 5/15/2021</p>
+    <div class="textDiv">
+        <table class="tableNoBorder" >
+            <tr class="tableNoBorder">
+                <td class="tableNoBorder">
+                    <img class="myPic" src="./img/stone_personal.png" alt="" srcset="" width="300">
+                </td>
+                <td class="tableNoBorder">
+                    <div>
+                        <p>你好！我是涂佐東，英文名是Stone Tu.</p>
+                        <p>我樂於接受挑戰，喜歡助人與coding，勇於嘗試新鮮事物，學習速度快．同時擁有溝通協調，團隊整合能力．</p>
+                        <p>以下是我的個人作品，按照時間順序由近至遠. 歡迎參觀給予指教．</p>
+                        <p>Email: td.tu@msa.hine.net</p>
+                        <p>Update 5/15/2021</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
     <!-- <a href="https://mango-flower-0625c1400.azurestaticapps.net/">Static web in Azure</a> -->
     <table>
         <tr>
@@ -18,13 +36,13 @@
             <th>說明</th>
         </tr>
         <tr>
-            <td rowspan="2">
-                <a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast" target="_blank">
-                    Link</a>
-                    <video controls="controls" width="300"
-                    name="Video Name" src="./video/face_detect_webcam_fast.mov"></video>
+            <td rowspan="2" class="tdDiv">
+                <video controls="controls" width="300"
+                name="Video Name" src="./video/face_detect_webcam_fast.mov"></video>
+                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast" target="_blank">
+                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast</a>
             </td>
-            <td>
+            <td class="tdDiv">
                 <p>
                 使用opencv 內建人臉辨識模型進行辨識
                 實作例子，由網頁開啟鏡頭，將影像傳輸到後端進行辨識，將辨識後的圖像顯示於網頁
@@ -33,16 +51,16 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>完成日期5/15</p>
             </td>
         </tr>
         <tr>
             <td rowspan="2">
-                <a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam" target="_blank">
-                    Link</a>
-                    <video controls="controls" width="300"
-                    name="Video Name" src="./video/cv2_face_detect_webcam.mov"></video>
+                <video controls="controls" width="300"
+                name="Video Name" src="./video/cv2_face_detect_webcam.mov"></video>
+                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam" target="_blank">
+                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam</a>
             </td>
             <td>
                 <p>
@@ -57,13 +75,13 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="2">
-                <a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect" target="_blank">
-                    Link</a>
-                    <video controls="controls" width="300"
-                    name="Video Name" src="./video/cv2_face_detect.mov"></video>
+            <td rowspan="2" class="tdDiv">
+                <video controls="controls" width="300"
+                name="Video Name" src="./video/cv2_face_detect.mov"></video>
+                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect" target="_blank">
+                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect</a>
             </td>
-            <td>
+            <td class="tdDiv">
                 <p>
                 使用opencv 內建人臉辨識模型進行辨識
                 實作例子，建立node.js express server，啟動由python opencv 開啟鏡頭進行辨識，將辨識後的圖像顯示於網頁
@@ -71,14 +89,15 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>完成日期4/26</p>
             </td>
         </tr>
         <tr>
             <td rowspan="2">
                 <a href="https://github.com/StoneTu/Python/tree/main/PCA_face_detect" target="_blank">
-                    <img src="./img/PCA_screen.png" alt="snake_screen.png"></a>
+                    <img src="./img/PCA_screen.png" alt="snake_screen.png">
+                    https://github.com/StoneTu/Python/tree/main/PCA_face_detect</a>
             </td>
             <td>
                 <p>
@@ -93,14 +112,15 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="2">
+            <td rowspan="2" class="tdDiv">
                 <a href="https://papsciroc-server.herokuapp.com/" target="_blank"
                     onClick="window.open('https://papsciroc-server.herokuapp.com/','papsciroc','resizable,height=660,width=1020'); return false;">
-                    <img src="./img/screen_shot_pap.png" alt=""></a>
+                    <img src="./img/screen_shot_pap.png" alt=""><br>
+                    https://papsciroc-server.herokuapp.com/</a><br>
                 <video controls="controls" width="300"
                     name="Video Name" src="./video/papsciroc.mov"></video>
             </td>
-            <td>
+            <td class="tdDiv">
                 <p>
                 剪刀石頭布的網站，可供多人連線到網頁尋找對手進行比賽，需要註冊帳號進行登入，並且會將比賽紀錄到資料庫，可供查詢與分析．
                 網頁部署到Heroku，並且使用heroku的資料庫clearDB MySQL．</p>
@@ -108,7 +128,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>完成日期3/19</p>
             </td>
         </tr>
@@ -116,7 +136,8 @@
             <td rowspan="2">
                 <a href="https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html" target="_blank"
                     onClick="window.open('https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html','tableTennis','resizable,height=660,width=1020'); return false;">
-                    <img src="./img/tableTennis_screen.png" alt="tableTennis_screen.png"></a>
+                    <img src="./img/tableTennis_screen.png" alt="tableTennis_screen.png">
+                    https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html</a>
                 <video controls="controls" width="300"
                     name="Video Name" src="./video/tableTennis.mov"></video>
             </td>
@@ -132,19 +153,20 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="2">
+            <td rowspan="2" class="tdDiv">
                 <a href="https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html" target="_blank"
                     onClick="window.open('https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html','tableTennis','resizable,height=660,width=1000'); return false;">
-                    <img src="./img/greenman_screen.png" alt="greenman_screen.png"></a>
+                    <img src="./img/greenman_screen.png" alt="greenman_screen.png">
+                    https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html</a>
                 <video controls="controls" width="300"
                     name="Video Name" src="./video/greenman.mov"></video>
             </td>
-            <td>
+            <td class="tdDiv">
                 <p>小綠人的遊戲，使用網頁上的互動元素來過關，主要是練習Canvas的功能，使用HTML, CSS, JavaScript, JQuery</p>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>完成日期2/11</p>
             </td>
         </tr>
@@ -170,23 +192,23 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="3">
+            <td rowspan="3" class="tdDiv">
                 <img src="./img/reserve_mysql_screen.png" alt="reserve_mysql_screen.png">
             </td>
-            <td>
+            <td class="tdDiv">
                 <iframe allow="microphone;" width="350" height="330"
                     src="https://console.dialogflow.com/api-client/demo/embedded/eff4ca35-caa2-498f-a625-933ba2789a4b">
                 </iframe>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>餐廳預約對話機械人MySql版本，更改為將資料存入MySql database，增加可以自動移動舊資料到歷史資料表，以及可以自動產生未來天數的空白資料可供預約與查詢．</p>
                 <p>備註：MySql server建置於ubuntu系統個人電腦，需要啟動電腦才能使用服務</p>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>完成日期2/26</p>
             </td>
         </tr>
@@ -206,17 +228,17 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="2">
+            <td rowspan="2" class="tdDiv">
                 <a href="https://stonetu.github.io/calculator/" target="_blank"
                     onClick="window.open('https://stonetu.github.io/calculator/','calculator','resizable,height=700,width=500'); return false;">
                     <img src="./img/calculator_screen.png" alt="calculator_screen.png"></a>
             </td>
-            <td>
-                <p>老師所建議的簡易計算機程式，使用HTML, CSS, JavaScript</p>
+            <td class="tdDiv">
+                <p>簡易計算機程式，使用HTML, CSS, JavaScript</p>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="tdDiv">
                 <p>完成日期2/1</p>
             </td>
         </tr>
