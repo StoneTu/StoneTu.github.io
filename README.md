@@ -1,11 +1,45 @@
 # Stone Tu's Study Space
 
-<p>Following are my works during AIEN11 class. Update 5/16/2021</p>
-    <!-- <a href="https://mango-flower-0625c1400.azurestaticapps.net/">Static web in Azure</a> -->
+<div class="textDiv">
+        <table class="tableNoBorder" >
+            <tr class="tableNoBorder">
+                <td class="tableNoBorder">
+                    <img class="myPic" src="./img/stone_personal.png" alt="" srcset="" width="300">
+                </td>
+                <td class="tableNoBorder">
+                    <div>
+                        <p>你好！我是涂佐東，英文名是Stone Tu.</p>
+                        <p>我樂於接受挑戰，喜歡助人與coding，勇於嘗試新鮮事物，學習速度快．同時擁有溝通協調，團隊整合能力．</p>
+                        <p>以下是我的個人作品，按照時間順序由近至遠. 歡迎參觀給予指教．</p>
+                        <p>Email: td.tu@msa.hinet.net</p>
+                        <p>Update 6/12/2021</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+</div>
     <table>
         <tr>
             <th>畫面</th>
             <th>說明</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="tdDiv">
+                <video controls="controls" width="300"
+                name="Video Name" src="./video/faceLogin.mov"></video>
+                <br><a href="https://github.com/StoneTu/Python/tree/main/faceRecognition" target="_blank">
+                    https://github.com/StoneTu/Python/tree/main/faceRecognition</a>
+            </td>
+            <td class="tdDiv">
+                <p>
+                    製作駕駛監測系統專案時，其中有一項臉部登入功能，利用dlib 68點人臉特徵點比對出資料庫最相似的特徵，這裡將這功能獨立呈現出來
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdDiv">
+                <p>完成日期6/12</p>
+            </td>
         </tr>
         <tr>
             <td rowspan="2">
