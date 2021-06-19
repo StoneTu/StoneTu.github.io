@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Tu's Profolio作品集</title>
+    <link rel="stylesheet" href="css/style_profolio.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="./"> <span class="h4 mx-1 headText">StoneTu首頁</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+        <div class="slide fade" id="slide1">
+            <p>1/11</p>
+            <div>
+                <video src="video/dms_vdo_clip.mov" autoplay muted loop></video>
+            </div>
+            <div class="description">
+                <h4>題目：駕駛監控系統</h4>
+                <p>駕駛行為偵測系統，透過鏡頭擷取影像，交由人工 智慧模型做出一系列駕駛人行為的判斷，針對諸如 分心、疲勞等異常行為作出警告。 </p>
+                <p>應用技術:深度學習tensorflow, 機械學習Python, Opencv, JavaScript, JQuery，Node.Js, HTML, CSS</p>
+                <p>完成日期6/21</p>
+                <a href="file/AIEN11-project-dms.pdf" target="_blank"  style="margin-left:30px">Download pdf</a>
+            </div>
+        </div>
+        <div class="slide fade" id="slide2">
+            <p>2/11</p>
+            <div><img src="img/facemesh.png" alt="" width="640"></div>
+            <div class="description">
+                <h4>題目：疲勞神經網路CNN模型</h4>
+                <p>利用Mediapipe facemesh取得特徵點，進行人臉疲勞度判定，
+                    建構CNN神經網路並訓練</p>
+                <p>應用技術:深度學習tensorflow, Python, Opencv</p>
+                <p>完成日期6/17</p>
+                <a href="https://github.com/StoneTu/Python/tree/main/fatigue_train" target="_blank">
+                    Github link</a>
+            </div>
+        </div>
+        <div class="slide fade" id="slide3">
+            <p>3/11</p>
+            <div>
+                <video autoplay muted loop height="400"
+                name="Video Name" src="./video/faceLogin.mov"></video>
+            </div>
+            <div class="description">
+                <h4>題目：臉部登入</h4>
+                <p>製作駕駛監測系統專案時，其中有一項臉部登入功能，利用dlib 68點人臉特徵點比對出資料庫最相似的特徵，這裡將這功能獨立呈現出來</p>
+                <p>應用技術:Python, Opencv, Dlib, Node.js, bootstrap</p>
+                <p>完成日期6/12</p>
+                <a href="https://github.com/StoneTu/Python/tree/main/faceRecognition" target="_blank">
+                    Github link</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>4/11</p>
+            <div>
+                <video autoplay muted loop width="640"
+                name="Video Name" src="./video/face_detect_webcam_fast.mov"></video>
+            </div>
+            <div class="description">
+                <h4>題目：網頁開啟鏡頭臉部辨識網站實作</h4>
+                <p>
+                    使用opencv 內建人臉辨識模型進行辨識
+                    由網頁開啟鏡頭，將影像傳輸到後端進行辨識，將辨識後的圖像顯示於網頁
+                    優化時間差的版本
+                </p>
+                <p>應用技術:Python, Opencv, Node.js</p>
+                <p>完成日期5/15</p>
+                <a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast" target="_blank">
+                    Github link</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>5/11</p>
+            <div><img src="./img/PCA_screen.png" alt="" width="640"></div>
+            <div class="description">
+                <h4>題目：PCA降維應用於人臉辨識(Principal Component Analysis)</h4>
+                <p>實作例子，由sklearn Olivetti人臉資料集400張人臉做辨識，識別出相似度高的人臉</p>
+                <p>應用技術:機械學習Scikit-learn, Python</p>
+                <p>完成日期6/17</p>
+                <a href="https://github.com/StoneTu/Python/tree/main/PCA_face_detect" target="_blank">
+                    Github link</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>6/11</p>
+            <div>
+                <video autoplay muted loop width="640"
+                name="Video Name" src="./video/papsciroc.mov"></video>
+            </div>
+            <div class="description">
+                <h4>題目：可多人連線網站-剪刀石頭布</h4>
+                <p>
+                    剪刀石頭布的網站，可供多人連線到網頁尋找對手進行比賽，需要註冊帳號進行登入，並且會將比賽紀錄到資料庫，可供查詢與分析．
+                    網頁部署到Heroku，並且使用heroku的資料庫clearDB MySQL．
+                </p>
+                <p>應用技術：HTML, CSS, JavaScript, JQuery，Node.Js, MySql</p>
+                <p>完成日期3/19</p>
+                <a href="https://papsciroc-server.herokuapp.com/" target="_blank"
+                    onClick="window.open('https://papsciroc-server.herokuapp.com/','papsciroc','resizable,height=660,width=1020'); return false;">
+                    https://papsciroc-server.herokuapp.com/</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>7/11</p>
+            <div>
+                <video autoplay muted loop width="640"
+                name="Video Name" src="./video/tableTennis.mov"></video>
+            </div>
+            <div class="description">
+                <h4>遊戲：桌球</h4>
+                <p>簡單的打桌球遊戲，滑鼠移動到人物上可以移動人物，按住滑鼠左鍵移動可揮拍，放開滑鼠左鍵完成擊球．</p>
+                <p>應用技術：HTML, CSS, JavaScript, JQuery</p>
+                <p>完成日期3/12</p>
+                <a href="https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html','tableTennis','resizable,height=660,width=1020'); return false;">
+                    Github Link</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>8/11</p>
+            <div>
+                <iframe allow="microphone;" width="350" height="530"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/5f8fd3f7-3433-417b-b7e8-6a32216f8a65">
+                </iframe>
+            </div>
+            <div class="description">
+                <h4>題目：餐廳預約對話機械人</h4>
+                <p>餐廳預約對話機械人，有兩個Intent，可預約訂位與查詢特定時間的餐廳空位人數，使用Dialogflow, Node.js接收與處理, 透過sheetDB將資料存取到google sheet, Node.js程式放置於雲端heroku server． </p>
+                <p>應用技術：Dialogflow, Node.js</p>
+                <p>完成日期2/21</p>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>9/11</p>
+            <div>
+                <video autoplay muted loop width="640"
+                name="Video Name" src="./video/greenman.mov"></video>
+            </div>
+            <div class="description">
+                <h4>遊戲：小綠人</h4>
+                <p>小綠人的遊戲，使用網頁上的互動元素來過關，主要是練習Canvas的功能</p>
+                <p>應用技術：HTML, CSS, JavaScript, JQuery</p>
+                <p>完成日期2/11</p>
+                <a href="https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html','tableTennis','resizable,height=660,width=1020'); return false;">
+                    Github Link</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>10/11</p>
+            <div>
+                <img src="./img/snake_screen.png" alt="snake_screen.png" width="640">
+            </div>
+            <div class="description">
+                <h4>遊戲：貪食蛇</h4>
+                <p>使用鍵盤操作綠色貪食蛇吃掉橘紅色食物</p>
+                <p>應用技術：HTML, CSS, JavaScript, JQuery</p>
+                <p>完成日期2/11</p>
+                <a href="https://stonetu.github.io/snake/mySnake.html" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/snake/mySnake.html','snake','resizable,height=660,width=530'); return false;">
+                    Github Link</a>
+            </div>
+        </div>
+        <div class="slide fade">
+            <p>11/11</p>
+            <div>
+                <img src="./img/calculator_screen.png" alt="calculator_screen.png" width="640">
+            </div>
+            <div class="description">
+                <h4>題目：計算機</h4>
+                <p>簡易計算機程式</p>
+                <p>應用技術：HTML, CSS, JavaScript</p>
+                <p>完成日期2/1</p>
+                <a href="https://stonetu.github.io/calculator/" target="_blank"
+                    onClick="window.open('https://stonetu.github.io/calculator/','calculator','resizable,height=700,width=500'); return false;">
+                    Github Link</a>
+            </div>
+        </div>
+        <a class="prev" onclick="slideChange(-1)">&#10094;</a>
+        <a class="next" onclick="slideChange(1)">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center" id="dotContainer">
+        <span class="dot" onclick="dotSlideChange(0)"></span>
+    </div>
+    <script src="js/profolioAction.js"></script>
+</body>
+</html>

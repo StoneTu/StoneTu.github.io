@@ -1,0 +1,34 @@
+img {
+    width: 300px;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 5px double #ff8929;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+.tableNoBorder {
+    border: 0px;
+    width: 55%;
+}
+.textDiv {
+    border-radius: 8px;
+    background-color: rgb(245, 241, 222);
+}
+.tdDiv {
+    border-radius: 8px;
+    background-color: rgb(243, 223, 215);
+}
+p, pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.myPic {
+    clip-path: circle(50% at 50% 50%);
+}
+.maxLimitTd {
+    height: 200px;
+    overflow:hidden;
+}

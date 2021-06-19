@@ -25,35 +25,58 @@
         </tr>
         <tr>
             <td rowspan="2" class="tdDiv">
+                <img src="img/visual.jpg">
+                <br><a href="https://github.com/StoneTu/Python/tree/main/fatigue_train" target="_blank">
+                    https://github.com/StoneTu/Python/tree/main/fatigue_train</a>
+            </td>
+            <td class="tdDiv">
+                <p>
+                    利用Mediapipe facemesh取得特徵點，進行人臉疲勞度判定，Google Mediapipe facemesh一共會抓取人臉特徵點468點，每點有(x,y,z)三個數值，嘗試取出(x,y)後拉平向量為(936,)維度，或是採用(468,2)維度丟入CNN神經網路訓練，結果都非常不理想，個人推測原因可能是如此處理資料無法建立點與點之間的相對關係，例如上眼皮點與下眼皮點靠近時應該要有特別意義，所以將這些特徵點再轉成(100,100) binary陣列，若輸出成圖示，
+將這陣列輸入到CNN神經網路訓練，終於得到比較收斂的成果
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdDiv">
+                <p>完成日期6/17</p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="">
                 <video controls="controls" width="300"
                 name="Video Name" src="./video/faceLogin.mov"></video>
                 <br><a href="https://github.com/StoneTu/Python/tree/main/faceRecognition" target="_blank">
                     https://github.com/StoneTu/Python/tree/main/faceRecognition</a>
             </td>
-            <td class="tdDiv">
+            <td class="">
                 <p>
                     製作駕駛監測系統專案時，其中有一項臉部登入功能，利用dlib 68點人臉特徵點比對出資料庫最相似的特徵，這裡將這功能獨立呈現出來
                 </p>
             </td>
         </tr>
         <tr>
-            <td class="tdDiv">
+            <td class="">
                 <p>完成日期6/12</p>
             </td>
         </tr>
         <tr>
-            <td rowspan="2">
-                <a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast" target="_blank">
-                    Link</a>
-                    <video controls="controls" width="300"
-                    name="Video Name" src="./video/cv2_face_detect_webcam_fast.mov"></video>
+            <td rowspan="2" class="tdDiv">
+                <video controls="controls" width="300"
+                name="Video Name" src="./video/face_detect_webcam_fast.mov"></video>
+                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast" target="_blank">
+                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast</a>
             </td>
-            <td>
+            <td class="tdDiv">
                 <p>
                 使用opencv 內建人臉辨識模型進行辨識
                 實作例子，由網頁開啟鏡頭，將影像傳輸到後端進行辨識，將辨識後的圖像顯示於網頁
                 優化時間差的版本
                 </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdDiv">
+                <p>完成日期5/15</p>
             </td>
         </tr>
         <tr>
