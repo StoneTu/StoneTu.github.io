@@ -3,282 +3,196 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone Tu's Study Space</title>
-    <link rel="stylesheet" href="st.css">
+    <title>Stone Tu's Profolio作品集</title>
+    <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-4.4.1.min.js"></script>
 </head>
 
 <body>
-    <div class="textDiv">
-        <table class="tableNoBorder" >
-            <tr class="tableNoBorder">
-                <td class="tableNoBorder">
-                    <img class="myPic" src="./img/stone_personal.png" alt="" srcset="" width="300">
-                </td>
-                <td class="tableNoBorder">
-                    <div>
-                        <p>你好！我是涂佐東，英文名是Stone Tu.</p>
-                        <p>我樂於接受挑戰，喜歡助人與coding，勇於嘗試新鮮事物．</p>
-                        <p>以下是我的個人作品，按照時間順序由近至遠. 歡迎參觀給予指教．</p>
-                        <p>Email: td.tu@msa.hinet.net</p>
-                        <p>Update 6/12/2021</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="./"> <span class="h4 mx-1 headText">StoneTu</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Skill技能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profolio">Profolio作品集</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact聯絡方式</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <div class="img1">
+        <div class="caption">
+            <div class='homeDesc'>
+                <p>我是涂佐東</p>
+                <p>英文名<span style="color:rgb(0, 255, 0)">Stone Tu</span>.</p>
+                <p>樂於接受挑戰，</p>
+                <p>喜歡助人與coding，</p>
+                <p>勇於<span style="color:blue">嘗試</span>新鮮事物．</p>
+            </div>
+        </div>
     </div>
-    <!-- <a href="https://mango-flower-0625c1400.azurestaticapps.net/">Static web in Azure</a> -->
-    <table>
-        <tr>
-            <th>畫面</th>
-            <th>說明</th>
-        </tr>
-        <tr>
-            <td rowspan="2" class="tdDiv">
-                <img src="img/visual.jpg">
-                <br><a href="https://github.com/StoneTu/Python/tree/main/fatigue_train" target="_blank">
-                    https://github.com/StoneTu/Python/tree/main/fatigue_train</a>
-            </td>
-            <td class="tdDiv">
-                <p>
-                    利用Mediapipe facemesh取得特徵點，進行人臉疲勞度判定，Google Mediapipe facemesh一共會抓取人臉特徵點468點，每點有(x,y,z)三個數值，嘗試取出(x,y)後拉平向量為(936,)維度，或是採用(468,2)維度丟入CNN神經網路訓練，結果都非常不理想，個人推測原因可能是如此處理資料無法建立點與點之間的相對關係，例如上眼皮點與下眼皮點靠近時應該要有特別意義，所以將這些特徵點再轉成(100,100) binary陣列，若輸出成圖示，
-將這陣列輸入到CNN神經網路訓練，終於得到比較收斂的成果
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期6/17</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="">
-                <video controls="controls" width="300"
-                name="Video Name" src="./video/faceLogin.mov"></video>
-                <br><a href="https://github.com/StoneTu/Python/tree/main/faceRecognition" target="_blank">
-                    https://github.com/StoneTu/Python/tree/main/faceRecognition</a>
-            </td>
-            <td class="">
-                <p>
-                    製作駕駛監測系統專案時，其中有一項臉部登入功能，利用dlib 68點人臉特徵點比對出資料庫最相似的特徵，這裡將這功能獨立呈現出來
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td class="">
-                <p>完成日期6/12</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="tdDiv">
-                <video controls="controls" width="300"
-                name="Video Name" src="./video/face_detect_webcam_fast.mov"></video>
-                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast" target="_blank">
-                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam_fast</a>
-            </td>
-            <td class="tdDiv">
-                <p>
-                使用opencv 內建人臉辨識模型進行辨識
-                實作例子，由網頁開啟鏡頭，將影像傳輸到後端進行辨識，將辨識後的圖像顯示於網頁
-                優化時間差的版本
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期5/15</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <video controls="controls" width="300"
-                name="Video Name" src="./video/cv2_face_detect_webcam.mov"></video>
-                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam" target="_blank">
-                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect_webcam</a>
-            </td>
-            <td>
-                <p>
-                使用opencv 內建人臉辨識模型進行辨識
-                實作例子，由網頁開啟鏡頭，將影像傳輸到後端進行辨識，將辨識後的圖像顯示於網頁
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>完成日期4/27</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="tdDiv">
-                <video controls="controls" width="300"
-                name="Video Name" src="./video/cv2_face_detect.mov"></video>
-                <br><a href="https://github.com/StoneTu/Python/tree/main/cv2_face_detect" target="_blank">
-                    https://github.com/StoneTu/Python/tree/main/cv2_face_detect</a>
-            </td>
-            <td class="tdDiv">
-                <p>
-                使用opencv 內建人臉辨識模型進行辨識
-                實作例子，建立node.js express server，啟動由python opencv 開啟鏡頭進行辨識，將辨識後的圖像顯示於網頁
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期4/26</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <a href="https://github.com/StoneTu/Python/tree/main/PCA_face_detect" target="_blank">
-                    <img src="./img/PCA_screen.png" alt="snake_screen.png">
-                    https://github.com/StoneTu/Python/tree/main/PCA_face_detect</a>
-            </td>
-            <td>
-                <p>
-                PCA降維應用於人臉辨識(Principal Component Analysis)
-                實作例子，由sklearn Olivetti人臉資料集400張人臉做辨識，識別出相似度高的人臉
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>完成日期4/22</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="tdDiv">
-                <a href="https://papsciroc-server.herokuapp.com/" target="_blank"
-                    onClick="window.open('https://papsciroc-server.herokuapp.com/','papsciroc','resizable,height=660,width=1020'); return false;">
-                    <img src="./img/screen_shot_pap.png" alt=""><br>
-                    https://papsciroc-server.herokuapp.com/</a><br>
-                <video controls="controls" width="300"
-                    name="Video Name" src="./video/papsciroc.mov"></video>
-            </td>
-            <td class="tdDiv">
-                <p>
-                剪刀石頭布的網站，可供多人連線到網頁尋找對手進行比賽，需要註冊帳號進行登入，並且會將比賽紀錄到資料庫，可供查詢與分析．
-                網頁部署到Heroku，並且使用heroku的資料庫clearDB MySQL．</p>
-                <p>應用技術：HTML, CSS, JavaScript, JQuery，Node.Js, MySql</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期3/19</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <a href="https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html" target="_blank"
-                    onClick="window.open('https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html','tableTennis','resizable,height=660,width=1020'); return false;">
-                    <img src="./img/tableTennis_screen.png" alt="tableTennis_screen.png">
-                    https://stonetu.github.io/JavaScript/tableTennis/tableTennis.html</a>
-                <video controls="controls" width="300"
-                    name="Video Name" src="./video/tableTennis.mov"></video>
-            </td>
-            <td>
-                <p>
-                簡單的打桌球遊戲，滑鼠移動到人物上可以移動人物，按住滑鼠左鍵移動可揮拍，放開滑鼠左鍵完成擊球．</p>
-                <p>應用技術：HTML, CSS, JavaScript, JQuery</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>完成日期3/12</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="tdDiv">
-                <a href="https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html" target="_blank"
-                    onClick="window.open('https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html','tableTennis','resizable,height=660,width=1000'); return false;">
-                    <img src="./img/greenman_screen.png" alt="greenman_screen.png">
-                    https://stonetu.github.io/JavaScript/canvas_greenman/movingUI.html</a>
-                <video controls="controls" width="300"
-                    name="Video Name" src="./video/greenman.mov"></video>
-            </td>
-            <td class="tdDiv">
-                <p>小綠人的遊戲，使用網頁上的互動元素來過關，主要是練習Canvas的功能，使用HTML, CSS, JavaScript, JQuery</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期2/11</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="3">
-                <img src="./img/reserve-bot1.png" alt="reserve-bot1.png">
-                <img src="./img/reserve-bot2.png" alt="reserve-bot2.png">
-            </td>
-            <td>
-                <iframe allow="microphone;" width="350" height="330"
+    <div class="midDiv">
+        <div class="resumDesc">
+            <p>我的履歷連結</p>
+            <a href="file/stone_AI_resume_chinese.pdf" target="_blank"  style="margin-left:30px">Download</a>
+        </div>
+    </div>
+    <div class="img2">
+        <div class="captionSkill" id="skill">
+            <div class='skillDesc'>
+                <p>軟體技能：</p>
+                <p style="margin-left:30px">深度學習Tensorflow</p>
+                <p style="margin-left:30px">機械學習Scikit-learn</p>
+                <p style="margin-left:30px">Python, Opencv</p>
+                <p style="margin-left:30px">網頁後端：Node.js</p>
+                <p style="margin-left:30px">網頁前端：HTML, CSS, Javascript, jQuery</p>
+                <p style="margin-left:30px">資料庫：MySQL, mongoDB</p>
+            </div>
+        </div>
+    </div>
+    <div class="midDiv"  id="profolio">
+        <div class="resumDesc">
+            <p>作品集 Profolio</p>
+            <a href="profolio.html" target="_blank" style="margin-left:30px">Link點此看更詳細介紹</a>
+        </div>
+    </div>
+    <div class="img3">
+        <div class="caption">
+            <table style="margin-left: 20px;">
+                <tr>
+                    <td rowspan="2" colspan="2">
+                        <div>
+                            <video src="video/dms_vdo_clip.mov" muted style="height:270px;width:100%"></video>
+                        </div>
+                        <div class="textInProject">
+                            <p class="videoDiv">駕駛監控系統</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/facemesh.png" alt="" srcset="" style="height:180px;width:100%">
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:blue">疲勞神經網路CNN模型</p>
+                        </div>
+                    </td>
+                    <td rowspan="2">
+                        <div>
+                            <video src="video/faceLogin.mov" muted  style="height:270px;width:100%"></video>
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">臉部登入</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <div>
+                            <video src="video/papsciroc_vdo_clip.mov" muted  style="height:160px;width:100%"></video>
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">可多人連線網站：剪刀石頭布</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <video src="video/tableTennis.mov" muted style="height:150px;width:100%"></video>
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">遊戲：桌球</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/snake_screen.png" alt="" srcset="" style="height:160px;width:100%">
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">遊戲：貪食蛇</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/PCA_screen.png" alt="" srcset="" style="height:150px;width:100%">
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">PCA降維應用於人臉辨識</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <div>
+                            <video src="video/greenman.mov" muted style="height:150px;width:100%"></video>
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">遊戲：小綠人</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/calculator_screen.png" alt="" srcset="" style="height:160px;width:100%">
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">網頁計算機</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="posUpDiv">
+                            <iframe allow="microphone;" height="230" style="width:100%"
                     src="https://console.dialogflow.com/api-client/demo/embedded/5f8fd3f7-3433-417b-b7e8-6a32216f8a65">
                 </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>餐廳預約對話機械人，有兩個Intent，可預約訂位與查詢特定時間的餐廳空位人數，使用Dialogflow, Node.js接收與處理, 透過sheetDB將資料存取到google sheet, Node.js程式放置於雲端heroku server． </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>完成日期2/21</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="3" class="tdDiv">
-                <img src="./img/reserve_mysql_screen.png" alt="reserve_mysql_screen.png">
-            </td>
-            <td class="tdDiv">
-                <iframe allow="microphone;" width="350" height="330"
-                    src="https://console.dialogflow.com/api-client/demo/embedded/eff4ca35-caa2-498f-a625-933ba2789a4b">
-                </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>餐廳預約對話機械人MySql版本，更改為將資料存入MySql database，增加可以自動移動舊資料到歷史資料表，以及可以自動產生未來天數的空白資料可供預約與查詢．</p>
-                <p>備註：MySql server建置於ubuntu系統個人電腦，需要啟動電腦才能使用服務</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期2/26</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <a href="https://stonetu.github.io/snake/mySnake.html" target="_blank"
-                    onClick="window.open('https://stonetu.github.io/snake/mySnake.html','snake','resizable,height=660,width=530'); return false;">
-                    <img src="./img/snake_screen.png" alt="snake_screen.png"></a>
-            </td>
-            <td>
-                <p>貪食蛇，使用鍵盤操作綠色貪食蛇吃掉橘紅色食物，使用HTML, CSS, JavaScript, JQuery</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>完成日期2/11</p>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="tdDiv">
-                <a href="https://stonetu.github.io/calculator/" target="_blank"
-                    onClick="window.open('https://stonetu.github.io/calculator/','calculator','resizable,height=700,width=500'); return false;">
-                    <img src="./img/calculator_screen.png" alt="calculator_screen.png"></a>
-            </td>
-            <td class="tdDiv">
-                <p>簡易計算機程式，使用HTML, CSS, JavaScript</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="tdDiv">
-                <p>完成日期2/1</p>
-            </td>
-        </tr>
-    </table>
+                        </div>
+                        <div class="textInProjectRev">
+                            <div style="color:black; background-color: aqua;">餐廳訂位對話機器人</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <video src="video/face_detect_webcam_fast.mov" muted style="height:150px;width:100%"></video>
+                        </div>
+                        <div class="textInProject">
+                            <p style="color:black">人臉辨識網頁伺服器</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="midDiv" id="contact">
+        <div class="resumDesc">
+            <p>我的聯絡方式</p>
+        </div>
+    </div>
+    <div class="img1">
+        <div class="caption">
+            <div class="resumDesc">
+                <p>My Email: td.tu@msa.hinet.net</p>
+                <a href="mailto:td.tu@msa.hinet.net" style="margin-left:30px">歡迎來信</a>
+            </div>
+    </div>
+    </div>
+    <script src="js/indexAction.js"></script>
 </body>
 
 </html>
